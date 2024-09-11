@@ -101,6 +101,7 @@ figure {
   width: 300px;
   position: fixed;
   left: 0px;
+  height: 100vh;
   z-index: 1001;
   background-color: #008080;
   -webkit-transition: 0.5s;
