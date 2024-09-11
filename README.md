@@ -1,4 +1,4 @@
 # My Portfolio 
 
 
-URL: https://anuraggupta.herokuapp.com
+URL: https://anuraggupta93.netlify.app/
