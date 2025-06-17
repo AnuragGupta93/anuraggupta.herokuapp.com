@@ -145,7 +145,7 @@
 									<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
 										<div class="hire">
 											<h2>Want to see my resume. Here you go!</h2>
-											<a href="/Anurag_Gupta_CV.pdf" class="btn-hire"
+											<a id="resume-link" href="/Anurag_Gupta_CV.pdf" class="btn-hire"
 												style="text-align: center;" target="_blank">Download Resume</a>
 										</div>
 									</div>
@@ -563,6 +563,22 @@
 
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
+	
+	<script>
+		// Get the current domain
+		const domain = window.location.origin;
+		let resumePatch = "/Anurag_Gupta_CV.pdf";
+
+		if(domain === 'https://i-am-anurag-gupta.netlify.app'){
+			resumePath = '/Anurag_Gupta.pdf'
+		}
+
+		// Construct the full URL to the resume
+		const resumeLink = domain + resumePath;
+
+		// Set the href attribute of the link
+		document.getElementById("resume-link").href = resumeLink;
+	</script>
 
 </body>
 
